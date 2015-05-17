@@ -1,3 +1,7 @@
+#ifndef SUPER_BLOCK_H
+#define SUPER_BLOCK_H
+#include "typedefs.h"
+
 struct super_block
 {
 	int s_inodes_count;
@@ -26,3 +30,5 @@ struct super_block
 	short s_def_resuid;
 	short s_def_resgid;
 };
+
+#endif

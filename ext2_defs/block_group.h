@@ -1,3 +1,8 @@
+#ifndef BLOCK_GROUP_H
+#define BLOCK_GROUP_H
+
+#include "typedefs.h"
+
 struct block_group
 {
 	int bg_block_bitmap;
@@ -9,3 +14,5 @@ struct block_group
 	short bg_pad;
 	char bg_reserved[12];
 };
+
+#endif
