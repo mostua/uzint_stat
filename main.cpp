@@ -1,7 +1,4 @@
-#include "ext2_defs/super_block.h"
-#include "ext2_defs/inode.h"
-#include "ext2_defs/block_group.h"
-#include "ext2_defs/block_group.h"
+#include "ext2_fs.h"
 #include <cstring>
 #include <fstream>
 #include <iostream>
@@ -13,10 +10,8 @@ char buffer[1024];
 
 int main()
 {
-	super_block sb;
-	inode in;
-	block_group bg;
-
+	ext2_super_block sb;
+	ext2_inode in;
     ifstream partition("ext2_part", ifstream::binary);
     partition.seekg(BOOT_BLOCK_SIZE);
     partition.read(buffer, sizeof(sb));
