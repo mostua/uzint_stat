@@ -1,0 +1,20 @@
+.:
+total 10294
+drwxr-xr-x 3 1000   100     1024 May 18 10:21 dir1
+-rw-r--r-- 1    0 65534        0 Jan 16  1919 file3
+------x--- 1    0     0        0 Jan 16  1919 file5
+-rw-r--r-- 1    0     0 10485760 May 18 10:25 file6
+drwx------ 2    0     0    12288 May 18 10:09 lost+found
+
+./dir1:
+total 14
+drwxr-xr-x 2     0     0 1024 May 18 10:22 dir2
+-r-xr-xr-x 1 65534 65534 5120 Sep 20  2011 file1
+-------rwx 1     0 65534 7884 Sep 20  2019 file2
+
+./dir1/dir2:
+total 2057
+------x--- 1 0 0 2097152 May 18 10:22 file4
+
+./lost+found:
+total 0
